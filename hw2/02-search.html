@@ -10,14 +10,30 @@
     <script defer src="02-data.js"></script>
     <script defer src="02-search.js"></script>
   </head>
-  <body>
-    <main>
-      <h1>Exercise 02 - Search</h1>
-      <div>
-        <label for="userInput">Search: </label>
-        <input type="text" id="userInput" />
-        <input type="button" value="Search Character: " />
+  <body class="bg-dark p-5">
+    <main
+      class="container bg-light mx-auto rounded p-5 d-flex flex-column align-items-center">
+      <h1 class="mb-4">Exercise 02 - Search</h1>
+
+      <div class="d-flex p-2">
+        <label for="userInput" class="visually-hidden">Search characters</label>
+        <input
+          type="text"
+          id="userInput"
+          class="form-control me-2"
+          style="width: 200px"
+          placeholder="Skywalker" />
+        <button
+          type="button"
+          id="searchBtn"
+          class="btn btn-primary"
+          style="width: 100px">
+          Search
+        </button>
+      </div>
+
+      <div class="container my-5">
+        <div id="results" class="row justify-content-center g-3"></div>
       </div>
     </main>
-  </body>
-</html>
+  </b
